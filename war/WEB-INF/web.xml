@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>TodoCheck</servlet-name>
+		<servlet-class>com.todo.TodoCheckServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TodoCheck</servlet-name>
+		<url-pattern>/todolist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>TodoFetch</servlet-name>
+		<servlet-class>com.todo.FetchTodos</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TodoFetch</servlet-name>
+		<url-pattern>/fetchTodos</url-pattern> 
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Todoedit</servlet-name>
+		<servlet-class>com.todo.UpdateEditedTodo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Todoedit</servlet-name>
+		<url-pattern>/todoedited</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>Tododelete</servlet-name>
+		<servlet-class>com.todo.TodoDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Tododelete</servlet-name>
+		<url-pattern>/tododelete</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Tododone</servlet-name>
+		<servlet-class>com.todo.TodoDone</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Tododone</servlet-name>
+		<url-pattern>/tododone</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>complete</servlet-name>
+		<servlet-class>com.todo.CompletedDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>complete</servlet-name>
+		<url-pattern>/completeddelete</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>

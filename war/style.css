@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:500);
+body{
+	background-image:url('grey-04.jpg');
+	background-color: #e3e3e3;
+	font-family: 'Raleway', sans-serif;
+}
+#taskadd{
+	background-color:black;
+	color:white;
+}
+.timestamp{
+	color:#999;
+	font-size: 11px;
+}
+#pen-fields{
+	margin-top:10%;
+    width:40%;
+    border:1px solid black;
+    margin-right:50px;
+    float:left;
+   background: rgba(46, 51, 56, 0.2)!important;
+}
+#comp-fields{
+	margin-top:10%;
+    width:40%;
+    border:1px solid black;
+    margin-right:80px;
+    float:left;
+    background: rgba(46, 51, 56, 0.2)!important;
+    
+}
+#todo-area{
+	margin-left:0px;
+	margin-top:10px;
+}
+.todo-btn-done{
+	width:10%;
+	height:10%;
+	/* padding-top:20px;
+	padding-left:20px;
+	padding-right:20px; */
+	margin-left:20px;
+	margin-right:20px;
+	background-color:green;
+	color:black;
+}
+.todo-btn-delete{
+	width:10%;
+	height:10%;
+	/* padding-top:20px;
+	padding-left:20px;  
+	padding-right:20px;
+ */	margin-left:20px;
+	margin-right:20px;
+	background-color:red;
+	color:black;
+}
+.todo-btn-edit{
+	width:10%;
+	height:15%;
+	/* padding-top:20px;
+	padding-left:20px;  
+	padding-right:20px; */
+	margin-left:20px;
+	margin-right:20px;
+	background-color:#c2c2a3;
+	color:black; 
+}
+
+.pen-comp-div{
+	padding-top:10%;
+	padding-left:10%;
+	padding-right:10%;
+}
+.todo-val-field{
+	width:auto !important;
+	height:auto !important;
+}

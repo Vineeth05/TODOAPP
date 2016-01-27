@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TodoList</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css" >
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
+	</head>
+	<body>
+	   <div class="container">
+        <div id="todo-area">
+          <div class="input-group pull-right">
+            <input type="text" class="form-control" id="todoInput" autofocus placeholder="put your tasks here">
+              <span class="input-group-btn">
+               <button class="btn btn-success glyphicon glyphicon-plus" type="button" id="taskadd"></button>
+                   </span>
+                </div> 
+               </div>
+           <!-- <div class="pen-comp-div"> -->
+           <div class="row">
+            <div id="pen-fields" class="col-lg-6">
+               <h4 class="well text-primary text-center" style="background-color:#ff3333;color:black;">Pending List</h4>
+               <ul class="list-group" id="todosPending">                 
+                    </ul> 
+            </div>  
+            <div id="comp-fields" class="col-lg-6">
+              <h4 class="well text-primary text-center" style="background-color:#2db300;color:black">Completed List</h4>
+               <ul class="list-group" id="todosCompleted">                 
+                    </ul> 
+               </div>
+               </div>
+           <!-- </div> -->
+       </div>
+       <script type="text/javascript" src="script.js"></script>
+	</body>
+</html> 
